@@ -21,7 +21,7 @@
 - **Resource constraints**: default configs assumed A100 GPUs; adapted training duration and batch sizing for CPU smoke tests.
 
 ## Results
-Baseline experiment (`exp00_baseline_smoke`) produced:
+Baseline experiment (`exp0_baseline`) produced:
 - Regression checkpoints: `.mdlus`, `.pt`
 - Diffusion checkpoints: `.mdlus`, `.pt`
 - Generated NetCDF output containing groups: `input`, `truth`, `prediction`
@@ -33,7 +33,7 @@ Sanity check metric (10m zonal wind):
 These metrics are used to confirm pipeline correctness and output scaling, not to claim model quality.
 
 ## Use of AI Tools
-AI tools were used to help interpret errors, understand configuration structure, and reason about the pipeline design. All fixes were verified manually and documented (see `ai_usage_log.md`).
+AI tools were used to help interpret errors, understand configuration structure, and reason about the pipeline design. All fixes were verified manually and documented (see `ai_usage.md`).
 
 ## Notes / Limitations
 - CPU-only execution

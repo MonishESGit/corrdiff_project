@@ -2,7 +2,7 @@
 
 AI tools were used for debugging and understanding, not to fabricate results.
 
-## exp00_baseline_smoke
+## exp0_baseline
 - Interpreting CorrDiff pipeline stages (regression vs diffusion vs generation)
 - Debugging import error for InfiniteSampler (API path change)
 - Debugging diffusion checkpoint loader expectations (.mdlus vs .pt)

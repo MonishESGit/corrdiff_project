@@ -9,7 +9,7 @@ The work is organized as **experiments** under `experiments/`, each containing:
 - brief notes
 
 ## Part 1 (Completed): End-to-end reproduction on local CPU
-Baseline experiment: `experiments/exp00_baseline_smoke/`
+Baseline experiment: `experiments/exp0_baseline/`
 
 Completed stages:
 1. Regression training (CPU smoke test)
@@ -37,9 +37,9 @@ Planned notes will live in `report/report_part2_architecture.md` and experiment 
 
 ## Where to start (for reviewers)
 Open:
-- `experiments/exp00_baseline_smoke/runbook.md`
+- `experiments/exp0_baseline/runbook.md`
 - `report/report_part1_baseline.md`
-- `experiments/exp00_baseline_smoke/results/ncdump_header.txt`
+- `experiments/exp0_baseline/results/ncdump_header.txt`
 
 ---
 
@@ -48,4 +48,4 @@ Open:
 - `scripts/`: small utilities for metrics/inspection
 - `report/`: Part 1 report + Part 2 notes placeholder
 - `physicsnemo/`: cloned dependency (or submodule)
-- `ai_usage_log.md`: record of AI-tool usage
+- `ai_usage.md`: record of AI-tool usage
