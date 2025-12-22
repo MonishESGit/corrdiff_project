@@ -1,0 +1,10 @@
+{
+  "experiment": "exp0_baseline",
+  "variable": "10u",
+  "units": "m/s",
+  "metrics": {
+    "mae": 2.1556437015533447,
+    "rmse": 2.7166504859924316
+  },
+  "notes": "Sanity check only. CPU-only smoke-test training configuration."
+}

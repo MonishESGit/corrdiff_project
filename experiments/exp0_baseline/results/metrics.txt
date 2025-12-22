@@ -1,0 +1,10 @@
+Experiment: exp0_baseline
+Variable: 10u
+Units: m/s
+
+MAE:  2.1556
+RMSE: 2.7167
+
+Notes:
+Metrics computed as a sanity check only.
+Training used reduced CPU-only smoke-test configuration.

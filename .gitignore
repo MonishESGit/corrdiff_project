@@ -1,0 +1,21 @@
+# outputs / weights
+**/checkpoints_*/
+**/*.pt
+**/*.mdlus
+**/wandb/
+**/outputs/
+**/*.nc
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# os
+.DS_Store
+
+# envs
+.venv/
+.env/
+
+physicsnemo/
