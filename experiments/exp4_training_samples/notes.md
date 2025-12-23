@@ -1,42 +1,36 @@
-# exp03 — Learning Rate Sweep (Regression)
+# exp04 — Notes (Diffusion training budget)
 
 ## Objective
-Evaluate sensitivity of CorrDiff regression performance to learning rate under a fixed training budget and identical generation setup.
+Evaluate how diffusion training budget affects downstream forecast quality, while keeping the regression checkpoint and generation configuration fixed.
 
-## Experimental Setup
+## Setup
 - Dataset: HRRR Mini
-- Training: regression UNet (CPU smoke configuration)
-- Learning rates tested:
-  - 1e-4
-  - 2e-4 (baseline)
-  - 1e-3
+- Regression: fixed (same checkpoint for all runs)
+- Diffusion training budgets:
+  - ~512 samples (short budget)
+  - ~2048 samples (longer budget)
 - Generation:
-  - Same diffusion checkpoint
-  - Same generation configuration
+  - Same seed and configuration
+  - Single timestamp
 - Evaluation:
   - MAE and RMSE vs ground truth
   - Variables: 10u, 10v
 
 ## Results Summary
 
-| LR | 10u MAE | 10u RMSE | 10v MAE | 10v RMSE |
-|----|--------|----------|---------|----------|
-| 1e-4 | 2.3998 | 2.9996 | 3.7817 | 4.6441 |
-| 2e-4 | 2.5989 | 3.2351 | 3.7851 | 4.6464 |
-| 1e-3 | **2.2458** | **2.8118** | **3.7579** | **4.6198** |
+| Diffusion budget | 10u MAE | 10u RMSE | 10v MAE | 10v RMSE |
+|------------------|--------|----------|---------|----------|
+| 512 samples | 2.87 | 3.55 | 3.73 | 4.59 |
+| 2048 samples | **1.87** | **2.29** | **2.64** | **3.25** |
 
 ## Interpretation
 
-- The highest learning rate (1e-3) achieved the best MAE and RMSE for both variables.
-- The baseline learning rate (2e-4) underperformed in this short training regime.
-- The lowest learning rate (1e-4) showed signs of underfitting given the limited number of training steps.
+- Increasing diffusion training budget leads to substantial improvements in forecast accuracy.
+- The effect is consistent across both wind components (10u and 10v).
+- Since the regression model and generation configuration are fixed, the observed improvements can be attributed directly to better learning of the residual distribution by the diffusion model.
 
-This behavior is consistent with optimization theory:
-- Larger learning rates can converge faster when training budgets are small.
-- Smaller learning rates require more steps to reach comparable performance.
+This confirms that diffusion training budget is a critical factor in CorrDiff performance, especially for capturing fine-scale corrections beyond the regression mean.
 
 ## Takeaway
 
-CorrDiff regression performance is sensitive to learning rate, especially under constrained training budgets. Default hyperparameters are not universally optimal, and tuning learning rate can yield meaningful downstream improvements in generated forecasts.
-
-This experiment validates the importance of optimization-aware configuration when training CorrDiff-style models.
+Under identical regression and generation settings, allocating more training budget to the diffusion model significantly improves final forecast quality. This experiment highlights the compute–quality tradeoff inherent in CorrDiff-style probabilistic models.

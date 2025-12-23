@@ -72,7 +72,7 @@ training:
     training_duration: 512
   io:
     print_progress_freq: 50
-    regression_checkpoint_path: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/CorrDiffRegressionUNet.0.518.mdlus
+    regression_checkpoint_path: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/CorrDiffRegressionUNet.0.519.mdlus
 
 
 perf:
@@ -80,7 +80,7 @@ perf:
   dataloader_workers: 0
 
 io:
-  regression_checkpoint_path: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/CorrDiffRegressionUNet.0.518.mdlus
+  regression_checkpoint_path: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/CorrDiffRegressionUNet.0.519.mdlus
   save_checkpoint_freq: 256
   save_n_recent_checkpoints: 2
   validation_freq: 1000000000

@@ -70,7 +70,6 @@ training:
     total_batch_size: 1
     batch_size_per_gpu: 1
     training_duration: 512
-    lr: 0.0001
   io:
     print_progress_freq: 50
 

@@ -17,7 +17,7 @@
 hydra:
     job:
           chdir: false
-          name: hrrr_mini_regression
+          name: hrrr_mini_diffusion
     run:
           dir: ./output/${hydra:job.name}
     searchpath:
@@ -34,7 +34,7 @@ defaults:
     #   `cwb`: full CWB dataset for Taiwan.
     #   `custom`: user-defined dataset. Parameters need to be specified below.
 
-    - model: regression
+    - model: diffusion
     # The model type.
     # Accepted values:
     #     `regression`: a regression UNet for deterministic predictions
@@ -69,17 +69,18 @@ training:
   hp:
     total_batch_size: 1
     batch_size_per_gpu: 1
-    training_duration: 512
-    lr: 0.0002
+    training_duration: 2048
   io:
     print_progress_freq: 50
+    regression_checkpoint_path: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/CorrDiffRegressionUNet.0.519.mdlus
+
 
 perf:
   fp_optimizations: fp32
   dataloader_workers: 0
 
 io:
-  regression_checkpoint_path: /Users/monish/Desktop/Research Job/physicsnemo/examples/weather/corrdiff/checkpoints_regression/checkpoint.0.512.pt
+  regression_checkpoint_path: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/CorrDiffRegressionUNet.0.519.mdlus
   save_checkpoint_freq: 256
   save_n_recent_checkpoints: 2
   validation_freq: 1000000000

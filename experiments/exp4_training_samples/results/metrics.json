@@ -1,36 +1,26 @@
 {
-  "experiment": "exp3_lr",
-  "description": "Learning-rate sweep on regression training; generated outputs evaluated against truth.",
+  "experiment": "exp04_diffusion_budget",
+  "description": "Diffusion training budget sweep (512 vs 2048 samples) with fixed regression checkpoint and fixed generation config",
   "units": "m/s",
   "runs": {
-    "lr_1e-4": {
+    "samples_512": {
       "10u": {
-        "mae": 2.3998425006866455,
-        "rmse": 2.9995968341827393
+        "mae": 2.8696742057800293,
+        "rmse": 3.5510659217834473
       },
       "10v": {
-        "mae": 3.7816648483276367,
-        "rmse": 4.644076347351074
+        "mae": 3.7347753047943115,
+        "rmse": 4.591217041015625
       }
     },
-    "lr_2e-4": {
+    "samples_2048": {
       "10u": {
-        "mae": 2.598940372467041,
-        "rmse": 3.2351131439208984
+        "mae": 1.8652355670928955,
+        "rmse": 2.2947652339935303
       },
       "10v": {
-        "mae": 3.7851271629333496,
-        "rmse": 4.646420955657959
-      }
-    },
-    "lr_1e-3": {
-      "10u": {
-        "mae": 2.245778799057007,
-        "rmse": 2.8118438720703125
-      },
-      "10v": {
-        "mae": 3.757930278778076,
-        "rmse": 4.619781494140625
+        "mae": 2.6404385566711426,
+        "rmse": 3.2470040321350098
       }
     }
   }

@@ -1,15 +1,11 @@
-Experiment: exp3_lr
-Description: LR sweep (regression) with fixed generation evaluation
+Experiment: exp04_diffusion_budget
+Description: Diffusion training budget sweep (512 vs 2048 samples), regression fixed
 Units: m/s
 
-Run: lr_1e-4  (experiments/exp3_lr/results/corrdiff_output_lr_1e-4.nc)
-  10u: MAE 2.3998, RMSE 2.9996
-  10v: MAE 3.7817, RMSE 4.6441
+Run: samples_512  (experiments/exp4_training_samples/results/corrdiff_output_samples512.nc)
+  10u: MAE 2.8697, RMSE 3.5511
+  10v: MAE 3.7348, RMSE 4.5912
 
-Run: lr_2e-4  (experiments/exp3_lr/results/corrdiff_output_lr_2e-4.nc)
-  10u: MAE 2.5989, RMSE 3.2351
-  10v: MAE 3.7851, RMSE 4.6464
-
-Run: lr_1e-3  (experiments/exp3_lr/results/corrdiff_output_lr_1e-3.nc)
-  10u: MAE 2.2458, RMSE 2.8118
-  10v: MAE 3.7579, RMSE 4.6198
+Run: samples_2048  (experiments/exp4_training_samples/results/corrdiff_output_samples2048.nc)
+  10u: MAE 1.8652, RMSE 2.2948
+  10v: MAE 2.6404, RMSE 3.2470
