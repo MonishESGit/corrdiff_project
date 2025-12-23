@@ -1,35 +1,22 @@
-# exp2_seed_repro — Runbook
+# exp03_lr_sweep — Runbook
 
 ## Objective
-Verify reproducibility and controlled stochasticity in CorrDiff generation by fixing and varying the random seed.
-
----
-
-## Setup
-- `num_ensembles = 1`
-- Same regression and diffusion checkpoints
-- Generation run three times with different seeds
-
----
+Test sensitivity of CorrDiff pipeline to regression learning rate by training regression with different LR values and evaluating generated forecasts.
 
 ## Runs
+- lr = 1e-4
+- lr = 2e-4 (baseline)
+- lr = 1e-3
 
-| Run | Seed | Expected Behavior |
-|----|------|------------------|
-| Run A | 0 | Reference output |
-| Run B | 0 | Identical to Run A |
-| Run C | 1 | Different stochastic sample |
+## Outputs
+- `results/corrdiff_output_lr_1e-4.nc`
+- `results/corrdiff_output_lr_2e-4.nc`
+- `results/corrdiff_output_lr_1e-3.nc`
 
----
+## Evaluation
+Metrics computed vs truth for each output:
+- `results/metrics.txt`
+- `results/metrics.json`
 
-## Commands
-
-```
-python generate.py --config-name=generate_seed0.yaml ++generation.seed=0
-```
-```
-python generate.py --config-name=generate_seed0.yaml ++generation.seed=0```
-```
-```
-python generate.py --config-name=generate_seed0.yaml ++generation.seed=1
-```
+## Notes
+Interpretation is provided in `notes.md`.

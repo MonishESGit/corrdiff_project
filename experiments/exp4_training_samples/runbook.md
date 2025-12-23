@@ -1,35 +1,19 @@
-# exp2_seed_repro — Runbook
+# exp04_diffusion_budget — Runbook
 
 ## Objective
-Verify reproducibility and controlled stochasticity in CorrDiff generation by fixing and varying the random seed.
-
----
-
-## Setup
-- `num_ensembles = 1`
-- Same regression and diffusion checkpoints
-- Generation run three times with different seeds
-
----
+Measure how diffusion training budget impacts downstream forecast quality, while keeping the regression checkpoint and generation config fixed.
 
 ## Runs
+- Diffusion trained with ~512 samples (short budget)
+- Diffusion trained with ~2048 samples (longer budget)
 
-| Run | Seed | Expected Behavior |
-|----|------|------------------|
-| Run A | 0 | Reference output |
-| Run B | 0 | Identical to Run A |
-| Run C | 1 | Different stochastic sample |
+## Outputs
+- `results/corrdiff_output_samples512.nc`
+- `results/corrdiff_output2048.nc`
 
----
+## Evaluation
+- `results/metrics.txt`
+- `results/metrics.json`
 
-## Commands
-
-```
-python generate.py --config-name=generate_seed0.yaml ++generation.seed=0
-```
-```
-python generate.py --config-name=generate_seed0.yaml ++generation.seed=0```
-```
-```
-python generate.py --config-name=generate_seed0.yaml ++generation.seed=1
-```
+## Notes
+Interpretation is in `notes.md`.
