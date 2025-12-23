@@ -121,3 +121,39 @@ Demonstrates that CorrDiff can be reconfigured to predict entirely different phy
 by modifying `dataset.output_variables`. This affects model output channels, training loss,
 generation artifacts, and evaluation metrics. Results confirm correct end-to-end execution,
 with expected degradation due to limited training budget.
+
+
+## Understanding & Analysis
+
+In addition to running experiments, I spent time reading, tracing, and understanding
+the full CorrDiff pipeline and its implementation in PhysicsNeMo.
+
+This includes:
+
+- **Regression model**
+  - UNet-based deterministic predictor used to estimate the conditional mean
+  - Role of regression as a low-frequency / large-scale baseline
+  - Output channel configuration driven by `dataset.output_variables`
+  - Interaction with normalization via `stats.json`
+
+- **Diffusion model**
+  - EDM-style residual diffusion model trained to predict stochastic corrections
+  - Conditioning on regression output during training and generation
+  - Noise scheduling, residual targets, and ensemble sampling behavior
+  - Effect of training budget, learning rate, and diffusion steps on forecast quality
+
+- **Generation pipeline**
+  - How regression and diffusion are combined at inference time
+  - Role of ensembles and stochastic sampling
+  - Deterministic vs stochastic components of generation
+  - Ensemble mean vs individual ensemble members
+
+- **Configuration system (Hydra)**
+  - How base configs, model configs, dataset configs, and overrides compose
+  - Mapping from YAML configs to code paths in `train.py` and `generate.py`
+  - Practical implications of changing hyperparameters such as
+    learning rate, training duration, number of ensembles, and output variables
+
+The experiments in this repository were designed not only to produce outputs,
+but to validate understanding of how architectural choices, hyperparameters,
+and configuration decisions affect model behavior and results.
