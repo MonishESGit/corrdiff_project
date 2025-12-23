@@ -1,0 +1,14 @@
+SHA-256 checksums for generated NetCDF files:
+
+seed = 0 (run A):
+8bf12b7e93296ef3660735977aac1ec48dea8544e489a9851741dc6f5098459a
+
+seed = 0 (run B):
+8bf12b7e93296ef3660735977aac1ec48dea8544e489a9851741dc6f5098459a
+
+seed = 1 (run C):
+cfe792d1fa1b2fb305bcc093baca16398cedaa53b4f739a5d12ad6bf84605e90
+
+Conclusion:
+- Runs with identical seeds produce identical outputs.
+- Changing the seed results in a different stochastic diffusion sample.
