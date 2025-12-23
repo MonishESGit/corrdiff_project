@@ -1,0 +1,63 @@
+{
+  "experiment": "exp1_ensembles4",
+  "description": "CorrDiff generation with num_ensembles=4. Metrics reported per-ensemble and for ensemble mean.",
+  "units": "m/s",
+  "variables": {
+    "10u": {
+      "per_ensemble": [
+        {
+          "ensemble": 0,
+          "mae": 2.0912084579467773,
+          "rmse": 2.628507137298584
+        },
+        {
+          "ensemble": 1,
+          "mae": 2.201141834259033,
+          "rmse": 2.768165111541748
+        },
+        {
+          "ensemble": 2,
+          "mae": 2.1689281463623047,
+          "rmse": 2.718980073928833
+        },
+        {
+          "ensemble": 3,
+          "mae": 2.132192373275757,
+          "rmse": 2.695692300796509
+        }
+      ],
+      "ensemble_mean": {
+        "mae": 1.3816039562225342,
+        "rmse": 1.760182499885559
+      }
+    },
+    "10v": {
+      "per_ensemble": [
+        {
+          "ensemble": 0,
+          "mae": 3.5935661792755127,
+          "rmse": 4.437688827514648
+        },
+        {
+          "ensemble": 1,
+          "mae": 3.486382484436035,
+          "rmse": 4.304248809814453
+        },
+        {
+          "ensemble": 2,
+          "mae": 3.548224687576294,
+          "rmse": 4.3813652992248535
+        },
+        {
+          "ensemble": 3,
+          "mae": 3.403245687484741,
+          "rmse": 4.1909308433532715
+        }
+      ],
+      "ensemble_mean": {
+        "mae": 3.024510383605957,
+        "rmse": 3.642524480819702
+      }
+    }
+  }
+}

@@ -1,51 +1,60 @@
-# CorrDiff HRRR-Mini Tiny Project (NCSU GIC Lab)
+# CorrDiff Mini Project — HRRR Mini Dataset
 
-This repo documents my tiny project submission for reproducing the CorrDiff pipeline on the HRRR-Mini dataset using NVIDIA PhysicsNeMo.
+This repository documents a series of controlled experiments using NVIDIA PhysicsNeMo’s **CorrDiff** model on the HRRR Mini weather dataset. The goal is to understand, run, and evaluate the full CorrDiff pipeline (regression + diffusion + generation), with an emphasis on reproducibility, uncertainty estimation, and scientific reporting.
 
-The work is organized as **experiments** under `experiments/`, each containing:
-- configs used
-- exact commands (runbook)
-- small verification artifacts (metrics, NetCDF header)
-- brief notes
-
-## Part 1 (Completed): End-to-end reproduction on local CPU
-Baseline experiment: `experiments/exp0_baseline/`
-
-Completed stages:
-1. Regression training (CPU smoke test)
-2. Diffusion training conditioned on regression checkpoint (CPU smoke test)
-3. Generation to NetCDF output + basic verification
-
-## Part 2 (In progress): Architecture + deeper understanding
-I will add notes on:
-- model architecture (regression UNet, diffusion residual model)
-- how stages interact (conditioning, residuals)
-- loss functions and training objectives
-- additional controlled experiments
-
-Planned notes will live in `report/report_part2_architecture.md` and experiment folders.
+This work was completed as part of a small technical evaluation project.
 
 ---
 
-## Environment
-- Machine: MacBook Pro (Apple Silicon)
-- Compute: CPU-only
-- Python: 3.11
-- W&B: offline
+## Project Overview
+
+CorrDiff is a two-stage probabilistic forecasting model:
+
+1. **Regression UNet**
+   - Learns a deterministic mean prediction for target variables.
+2. **Diffusion Model**
+   - Learns a stochastic residual distribution around the regression mean.
+3. **Generation**
+   - Combines regression + diffusion to produce one or more ensemble forecasts.
+
+This repo demonstrates:
+- End-to-end execution of the pipeline
+- Ensemble-based uncertainty estimation
+- Metric-based evaluation using NetCDF outputs
+- Clean experiment tracking and documentation
 
 ---
 
-## Where to start (for reviewers)
-Open:
-- `experiments/exp0_baseline/runbook.md`
-- `report/report_part1_baseline.md`
-- `experiments/exp0_baseline/results/ncdump_header.txt`
+## Dataset
+
+- **Dataset:** HRRR Mini (Continental US)
+- **Spatial Resolution:** 64 × 64 grid
+- **Targets:** 10u, 10v (10m zonal & meridional wind)
+- **Inputs:** Meteorological fields such as u/v winds at multiple pressure levels, temperature, humidity, surface pressure, etc.
 
 ---
 
-## Repo layout
-- `experiments/`: each experiment is self-contained
-- `scripts/`: small utilities for metrics/inspection
-- `report/`: Part 1 report + Part 2 notes placeholder
-- `physicsnemo/`: cloned dependency (or submodule)
-- `ai_usage.md`: record of AI-tool usage
+## Experiments
+
+| Experiment ID | Description |
+|--------------|------------|
+| exp0 | Baseline smoke test (single ensemble) |
+| exp1 | Ensemble uncertainty experiment (4 ensembles) |
+
+Each experiment contains:
+- Configs used
+- Runbook with commands
+- NetCDF outputs
+- Metric files (`metrics.txt`, `metrics.json`)
+- Interpretation notes
+
+---
+All experiments were run using CPU smoke configurations on macOS. Exact commands and checkpoints are recorded per experiment in each `runbook.md`.
+
+---
+
+## Key Takeaways
+
+- CorrDiff successfully produces stochastic ensemble forecasts.
+- Ensemble averaging significantly improves accuracy over individual samples.
+- Proper experiment documentation makes results reproducible and interpretable.
