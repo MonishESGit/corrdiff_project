@@ -17,6 +17,30 @@ The experiments conducted here are designed to validate:
 
 ---
 
+### Experiment exp0_baseline_smoke — End-to-End Sanity Check
+
+**Goal:**  
+Validate the complete CorrDiff pipeline (regression → diffusion → generation)
+using a minimal training budget and CPU-friendly configuration.
+
+**What was done:**
+- Trained regression UNet on HRRR mini dataset
+- Trained diffusion residual model conditioned on regression output
+- Generated forecasts using both checkpoints
+- Verified NetCDF structure and computed MAE / RMSE metrics
+
+**Why this matters:**  
+This experiment establishes that:
+- Dataset loading and normalization are correct
+- Hydra configs resolve properly
+- Checkpointing and reload work as expected
+- Regression and diffusion models integrate correctly at inference time
+
+All subsequent experiments (ensembles, learning rate sweeps, training budget,
+and output-variable changes) build on this validated baseline.
+
+---
+
 ## Experiment exp1 — Ensemble Uncertainty
 
 ### Goal
