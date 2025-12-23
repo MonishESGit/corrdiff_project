@@ -115,3 +115,9 @@ This highlights the importance of optimization-aware tuning rather than relying 
 ### exp04 — Diffusion Training Budget Matters
 
 A controlled diffusion budget sweep (512 vs 2048 samples) with regression held fixed shows large and consistent gains in forecast accuracy when the diffusion model is trained longer. MAE and RMSE improved substantially for both 10u and 10v, confirming that diffusion training budget directly impacts the quality of residual correction in CorrDiff.
+
+**exp05 — Output Variable Change (2t + tp)**  
+Demonstrates that CorrDiff can be reconfigured to predict entirely different physical quantities
+by modifying `dataset.output_variables`. This affects model output channels, training loss,
+generation artifacts, and evaluation metrics. Results confirm correct end-to-end execution,
+with expected degradation due to limited training budget.

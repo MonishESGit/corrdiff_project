@@ -1,0 +1,18 @@
+{
+  "experiment": "exp05_output_2t_tp",
+  "description": "Output variable change: train+generate CorrDiff with output_variables=['2t','tp']",
+  "runs": {
+    "2t_tp": {
+      "2t": {
+        "mae": 11.573540687561035,
+        "rmse": 15.337955474853516,
+        "units": "K"
+      },
+      "tp": {
+        "mae": 0.9261828660964966,
+        "rmse": 1.036666989326477,
+        "units": "unknown"
+      }
+    }
+  }
+}

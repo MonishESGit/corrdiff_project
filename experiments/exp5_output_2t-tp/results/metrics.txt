@@ -1,0 +1,10 @@
+Experiment: exp05_output_2t_tp
+Description: output_variables = ['2t','tp']
+
+Variable: 2t  Units: K
+  MAE : 11.5735
+  RMSE: 15.3380
+
+Variable: tp  Units: unknown
+  MAE : 0.9262
+  RMSE: 1.0367
