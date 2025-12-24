@@ -1,0 +1,67 @@
+[2025-12-23 12:33:30,578][main][INFO] - Using dataset: hrrr_mini
+[2025-12-23 12:33:30,579][main][INFO] - Saving the outputs in /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff
+[2025-12-23 12:33:30,646][checkpoint][INFO] - Loaded checkpoint file /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/checkpoint.0.519.pt to device cpu
+[2025-12-23 12:35:40,800][main][INFO] - Patch-based training disabled
+[2025-12-23 12:35:41,299][checkpoint][INFO] - Loaded model state dictionary /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/CorrDiffRegressionUNet.0.519.mdlus to device cpu
+[2025-12-23 12:35:41,989][checkpoint][INFO] - Loaded checkpoint file /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/checkpoint.0.519.pt to device cpu
+[2025-12-23 12:35:41,992][main][INFO] - Using 1 gradient accumulation rounds
+[2025-12-23 12:35:41,992][main][INFO] - Training a non-patched model: patch gradient accumulation automatically disabled.
+[2025-12-23 12:35:42,046][checkpoint][INFO] - Loaded checkpoint file /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/checkpoint.0.519.pt to device cpu
+[2025-12-23 12:35:42,049][checkpoint][INFO] - Loaded optimizer state dictionary
+[2025-12-23 12:35:42,049][main][INFO] - Training for 2048 images...
+[2025-12-23 12:35:48,803][main][INFO] - Starting Profiler at 543
+[2025-12-23 12:35:49,078][main][INFO] - samples 544.0     training_loss 3254.41 training_loss_running_mean 1997.26 learning_rate 0.00020000 total_sec 7.1     sec_per_tick 0.3     sec_per_sample 0.27    cpu_mem_gb 0.89  
+[2025-12-23 12:35:49,079][main][INFO] - Stopping Profiler at 544
+[2025-12-23 12:35:57,448][main][INFO] - samples 576.0     training_loss 2540.99 training_loss_running_mean 2233.59 learning_rate 0.00020000 total_sec 15.5    sec_per_tick 0.3     sec_per_sample 0.25    cpu_mem_gb 0.94  
+[2025-12-23 12:36:05,809][main][INFO] - samples 608.0     training_loss 725.73  training_loss_running_mean 1524.59 learning_rate 0.00020000 total_sec 23.8    sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.73  
+[2025-12-23 12:36:13,948][main][INFO] - samples 640.0     training_loss 438.18  training_loss_running_mean 2116.81 learning_rate 0.00020000 total_sec 32.0    sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.90  
+[2025-12-23 12:36:21,982][main][INFO] - samples 672.0     training_loss 1278.07 training_loss_running_mean 1909.14 learning_rate 0.00020000 total_sec 40.0    sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.90  
+[2025-12-23 12:36:30,093][main][INFO] - samples 704.0     training_loss 799.13  training_loss_running_mean 1593.33 learning_rate 0.00020000 total_sec 48.1    sec_per_tick 0.2     sec_per_sample 0.25    cpu_mem_gb 0.90  
+[2025-12-23 12:36:38,098][main][INFO] - samples 736.0     training_loss 5249.06 training_loss_running_mean 2378.00 learning_rate 0.00020000 total_sec 56.1    sec_per_tick 0.2     sec_per_sample 0.24    cpu_mem_gb 0.89  
+[2025-12-23 12:36:46,193][main][INFO] - samples 768.0     training_loss 4246.42 training_loss_running_mean 2038.79 learning_rate 0.00020000 total_sec 64.2    sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.90  
+[2025-12-23 12:36:54,261][main][INFO] - samples 800.0     training_loss 1416.90 training_loss_running_mean 1831.45 learning_rate 0.00020000 total_sec 72.3    sec_per_tick 0.2     sec_per_sample 0.23    cpu_mem_gb 0.90  
+[2025-12-23 12:37:02,497][main][INFO] - samples 832.0     training_loss 4352.32 training_loss_running_mean 2407.03 learning_rate 0.00020000 total_sec 80.5    sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.86  
+[2025-12-23 12:37:10,657][main][INFO] - samples 864.0     training_loss 1686.90 training_loss_running_mean 1727.22 learning_rate 0.00020000 total_sec 88.7    sec_per_tick 0.3     sec_per_sample 0.27    cpu_mem_gb 0.89  
+[2025-12-23 12:37:18,874][main][INFO] - samples 896.0     training_loss 1090.29 training_loss_running_mean 1834.55 learning_rate 0.00020000 total_sec 96.9    sec_per_tick 0.3     sec_per_sample 0.25    cpu_mem_gb 0.88  
+[2025-12-23 12:37:26,992][main][INFO] - samples 928.0     training_loss 635.56  training_loss_running_mean 5819.05 learning_rate 0.00020000 total_sec 105.0   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.91  
+[2025-12-23 12:37:35,091][main][INFO] - samples 960.0     training_loss 173.05  training_loss_running_mean 1998.96 learning_rate 0.00020000 total_sec 113.1   sec_per_tick 0.2     sec_per_sample 0.23    cpu_mem_gb 0.89  
+[2025-12-23 12:37:43,012][main][INFO] - samples 992.0     training_loss 3658.38 training_loss_running_mean 1923.62 learning_rate 0.00020000 total_sec 121.0   sec_per_tick 0.3     sec_per_sample 0.27    cpu_mem_gb 0.84  
+[2025-12-23 12:37:51,100][main][INFO] - samples 1024.0    training_loss 4875.65 training_loss_running_mean 1888.30 learning_rate 0.00020000 total_sec 129.1   sec_per_tick 0.2     sec_per_sample 0.23    cpu_mem_gb 0.90  
+[2025-12-23 12:37:59,151][main][INFO] - samples 1056.0    training_loss 4306.67 training_loss_running_mean 2235.69 learning_rate 0.00020000 total_sec 137.2   sec_per_tick 0.3     sec_per_sample 0.29    cpu_mem_gb 0.84  
+[2025-12-23 12:38:07,763][main][INFO] - samples 1088.0    training_loss 615.56  training_loss_running_mean 2293.70 learning_rate 0.00020000 total_sec 145.8   sec_per_tick 0.3     sec_per_sample 0.27    cpu_mem_gb 0.85  
+[2025-12-23 12:38:16,094][main][INFO] - samples 1120.0    training_loss 1128.07 training_loss_running_mean 1623.60 learning_rate 0.00020000 total_sec 154.1   sec_per_tick 0.2     sec_per_sample 0.23    cpu_mem_gb 0.88  
+[2025-12-23 12:38:24,358][main][INFO] - samples 1152.0    training_loss 2557.90 training_loss_running_mean 1487.61 learning_rate 0.00020000 total_sec 162.4   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.83  
+[2025-12-23 12:38:33,105][main][INFO] - samples 1184.0    training_loss 2601.40 training_loss_running_mean 1666.14 learning_rate 0.00020000 total_sec 171.1   sec_per_tick 0.3     sec_per_sample 0.27    cpu_mem_gb 0.72  
+[2025-12-23 12:38:41,987][main][INFO] - samples 1216.0    training_loss 3864.25 training_loss_running_mean 1880.66 learning_rate 0.00020000 total_sec 180.0   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.83  
+[2025-12-23 12:38:50,715][main][INFO] - samples 1248.0    training_loss 7404.18 training_loss_running_mean 2073.07 learning_rate 0.00020000 total_sec 188.7   sec_per_tick 0.3     sec_per_sample 0.28    cpu_mem_gb 0.82  
+[2025-12-23 12:38:59,204][main][INFO] - samples 1280.0    training_loss 2574.73 training_loss_running_mean 1596.59 learning_rate 0.00020000 total_sec 197.2   sec_per_tick 0.3     sec_per_sample 0.27    cpu_mem_gb 0.87  
+[2025-12-23 12:39:08,115][main][INFO] - samples 1312.0    training_loss 2889.77 training_loss_running_mean 1601.98 learning_rate 0.00020000 total_sec 206.1   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.78  
+[2025-12-23 12:39:16,222][main][INFO] - samples 1344.0    training_loss 1028.42 training_loss_running_mean 1841.98 learning_rate 0.00020000 total_sec 214.2   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.84  
+[2025-12-23 12:39:24,334][main][INFO] - samples 1376.0    training_loss 1848.38 training_loss_running_mean 1698.16 learning_rate 0.00020000 total_sec 222.3   sec_per_tick 0.3     sec_per_sample 0.25    cpu_mem_gb 0.89  
+[2025-12-23 12:39:32,398][main][INFO] - samples 1408.0    training_loss 1456.79 training_loss_running_mean 1590.64 learning_rate 0.00020000 total_sec 230.4   sec_per_tick 0.2     sec_per_sample 0.25    cpu_mem_gb 0.91  
+[2025-12-23 12:39:40,660][main][INFO] - samples 1440.0    training_loss 588.42  training_loss_running_mean 2498.02 learning_rate 0.00020000 total_sec 238.7   sec_per_tick 0.2     sec_per_sample 0.23    cpu_mem_gb 0.88  
+[2025-12-23 12:39:49,206][main][INFO] - samples 1472.0    training_loss 1227.73 training_loss_running_mean 2087.31 learning_rate 0.00020000 total_sec 247.2   sec_per_tick 0.3     sec_per_sample 0.25    cpu_mem_gb 0.80  
+[2025-12-23 12:39:57,385][main][INFO] - samples 1504.0    training_loss 437.35  training_loss_running_mean 1636.73 learning_rate 0.00020000 total_sec 255.4   sec_per_tick 0.2     sec_per_sample 0.24    cpu_mem_gb 0.84  
+[2025-12-23 12:40:05,655][main][INFO] - samples 1536.0    training_loss 816.74  training_loss_running_mean 2492.16 learning_rate 0.00020000 total_sec 263.7   sec_per_tick 0.2     sec_per_sample 0.25    cpu_mem_gb 0.82  
+[2025-12-23 12:40:13,738][main][INFO] - samples 1568.0    training_loss 955.91  training_loss_running_mean 2055.48 learning_rate 0.00020000 total_sec 271.7   sec_per_tick 0.2     sec_per_sample 0.25    cpu_mem_gb 0.85  
+[2025-12-23 12:40:21,803][main][INFO] - samples 1600.0    training_loss 535.56  training_loss_running_mean 1907.35 learning_rate 0.00020000 total_sec 279.8   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.88  
+[2025-12-23 12:40:29,945][main][INFO] - samples 1632.0    training_loss 1341.69 training_loss_running_mean 1842.49 learning_rate 0.00020000 total_sec 288.0   sec_per_tick 0.2     sec_per_sample 0.24    cpu_mem_gb 0.90  
+[2025-12-23 12:40:37,905][main][INFO] - samples 1664.0    training_loss 2527.67 training_loss_running_mean 1808.94 learning_rate 0.00020000 total_sec 295.9   sec_per_tick 0.2     sec_per_sample 0.25    cpu_mem_gb 0.89  
+[2025-12-23 12:40:45,809][main][INFO] - samples 1696.0    training_loss 821.17  training_loss_running_mean 1836.14 learning_rate 0.00020000 total_sec 303.8   sec_per_tick 0.3     sec_per_sample 0.27    cpu_mem_gb 0.87  
+[2025-12-23 12:40:53,780][main][INFO] - samples 1728.0    training_loss 1726.23 training_loss_running_mean 2336.95 learning_rate 0.00020000 total_sec 311.8   sec_per_tick 0.3     sec_per_sample 0.25    cpu_mem_gb 0.88  
+[2025-12-23 12:41:01,927][main][INFO] - samples 1760.0    training_loss 390.38  training_loss_running_mean 1453.49 learning_rate 0.00020000 total_sec 319.9   sec_per_tick 0.2     sec_per_sample 0.23    cpu_mem_gb 0.85  
+[2025-12-23 12:41:10,237][main][INFO] - samples 1792.0    training_loss 629.74  training_loss_running_mean 2708.17 learning_rate 0.00020000 total_sec 328.2   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.90  
+[2025-12-23 12:41:18,323][main][INFO] - samples 1824.0    training_loss 993.83  training_loss_running_mean 1670.00 learning_rate 0.00020000 total_sec 336.3   sec_per_tick 0.3     sec_per_sample 0.25    cpu_mem_gb 0.82  
+[2025-12-23 12:41:26,375][main][INFO] - samples 1856.0    training_loss 5612.03 training_loss_running_mean 2145.13 learning_rate 0.00020000 total_sec 344.4   sec_per_tick 0.2     sec_per_sample 0.23    cpu_mem_gb 0.89  
+[2025-12-23 12:41:34,397][main][INFO] - samples 1888.0    training_loss 1199.81 training_loss_running_mean 1301.42 learning_rate 0.00020000 total_sec 352.4   sec_per_tick 0.2     sec_per_sample 0.25    cpu_mem_gb 0.90  
+[2025-12-23 12:41:42,408][main][INFO] - samples 1920.0    training_loss 8286.25 training_loss_running_mean 2350.65 learning_rate 0.00020000 total_sec 360.4   sec_per_tick 0.2     sec_per_sample 0.24    cpu_mem_gb 0.89  
+[2025-12-23 12:41:50,449][main][INFO] - samples 1952.0    training_loss 559.47  training_loss_running_mean 2281.40 learning_rate 0.00020000 total_sec 368.5   sec_per_tick 0.2     sec_per_sample 0.22    cpu_mem_gb 0.91  
+[2025-12-23 12:41:58,452][main][INFO] - samples 1984.0    training_loss 2782.82 training_loss_running_mean 1813.57 learning_rate 0.00020000 total_sec 376.5   sec_per_tick 0.3     sec_per_sample 0.27    cpu_mem_gb 0.89  
+[2025-12-23 12:42:06,844][main][INFO] - samples 2016.0    training_loss 298.05  training_loss_running_mean 2022.85 learning_rate 0.00020000 total_sec 384.9   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.79  
+[2025-12-23 12:42:14,895][main][INFO] - samples 2048.0    training_loss 330.78  training_loss_running_mean 2028.30 learning_rate 0.00020000 total_sec 392.9   sec_per_tick 0.3     sec_per_sample 0.26    cpu_mem_gb 0.90  
+[2025-12-23 12:42:14,965][checkpoint][INFO] - Saved model state dictionary: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/CorrDiffRegressionUNet.0.2048.mdlus
+[2025-12-23 12:42:15,253][checkpoint][INFO] - Saved training checkpoint: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_regression/checkpoint.0.2048.pt
+[2025-12-23 12:42:15,254][main][INFO] - Training Completed.
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync wandb/wandb/offline-run-20251223_123330-s4ymd7kl[0m

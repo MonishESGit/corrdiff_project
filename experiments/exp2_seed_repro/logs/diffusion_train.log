@@ -1,0 +1,30 @@
+[2025-12-23 17:58:50,245][main][INFO] - Using dataset: hrrr_mini
+[2025-12-23 17:58:50,258][main][INFO] - Saving the outputs in /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff
+[2025-12-23 17:58:50,259][checkpoint][WARNING] - Provided checkpoint directory ./checkpoints_diffusion does not exist, skipping load
+[2025-12-23 18:08:51,980][main][INFO] - Patch-based training disabled
+[2025-12-23 18:08:54,349][checkpoint][WARNING] - Provided checkpoint directory ./checkpoints_diffusion does not exist, skipping load
+[2025-12-23 18:08:54,506][main][INFO] - Loaded the pre-trained regression model
+[2025-12-23 18:08:54,507][main][INFO] - Using 1 gradient accumulation rounds
+[2025-12-23 18:08:54,507][main][INFO] - Training a non-patched model: patch gradient accumulation automatically disabled.
+[2025-12-23 18:08:54,508][checkpoint][WARNING] - Provided checkpoint directory ./checkpoints_diffusion does not exist, skipping load
+[2025-12-23 18:08:54,508][main][INFO] - Training for 512 images...
+[2025-12-23 18:09:05,445][main][INFO] - Starting Profiler at 24
+[2025-12-23 18:09:05,904][main][INFO] - Stopping Profiler at 25
+[2025-12-23 18:09:17,152][main][INFO] - samples 50.0      training_loss 8957.23 training_loss_running_mean 7971.65 learning_rate 0.00020000 total_sec 22.6    sec_per_tick 0.4     sec_per_sample 0.44    cpu_mem_gb 0.70  
+[2025-12-23 18:09:41,057][main][INFO] - samples 100.0     training_loss 10624.31 training_loss_running_mean 7260.92 learning_rate 0.00020000 total_sec 46.5    sec_per_tick 0.5     sec_per_sample 0.46    cpu_mem_gb 0.70  
+[2025-12-23 18:10:04,918][main][INFO] - samples 150.0     training_loss 7708.28 training_loss_running_mean 6998.56 learning_rate 0.00020000 total_sec 70.4    sec_per_tick 0.4     sec_per_sample 0.43    cpu_mem_gb 0.83  
+[2025-12-23 18:10:28,417][main][INFO] - samples 200.0     training_loss 10460.24 training_loss_running_mean 6428.53 learning_rate 0.00020000 total_sec 93.9    sec_per_tick 0.5     sec_per_sample 0.47    cpu_mem_gb 0.62  
+[2025-12-23 18:10:51,521][main][INFO] - samples 250.0     training_loss 14647.50 training_loss_running_mean 6156.51 learning_rate 0.00020000 total_sec 117.0   sec_per_tick 0.4     sec_per_sample 0.42    cpu_mem_gb 0.77  
+[2025-12-23 18:11:13,834][main][INFO] - samples 300.0     training_loss 10956.56 training_loss_running_mean 6563.57 learning_rate 0.00020000 total_sec 139.3   sec_per_tick 0.4     sec_per_sample 0.43    cpu_mem_gb 0.64  
+[2025-12-23 18:11:36,009][main][INFO] - samples 350.0     training_loss 8079.64 training_loss_running_mean 6029.78 learning_rate 0.00020000 total_sec 161.5   sec_per_tick 0.4     sec_per_sample 0.44    cpu_mem_gb 0.77  
+[2025-12-23 18:12:00,568][main][INFO] - samples 400.0     training_loss 3986.70 training_loss_running_mean 6069.44 learning_rate 0.00020000 total_sec 186.1   sec_per_tick 0.5     sec_per_sample 0.48    cpu_mem_gb 0.70  
+[2025-12-23 18:12:24,543][main][INFO] - samples 450.0     training_loss 5813.70 training_loss_running_mean 7648.36 learning_rate 0.00020000 total_sec 210.0   sec_per_tick 0.4     sec_per_sample 0.43    cpu_mem_gb 0.69  
+[2025-12-23 18:12:48,379][main][INFO] - samples 500.0     training_loss 4332.75 training_loss_running_mean 6572.74 learning_rate 0.00020000 total_sec 233.9   sec_per_tick 0.4     sec_per_sample 0.45    cpu_mem_gb 0.75  
+[2025-12-23 18:12:53,700][main][INFO] - samples 512.0     training_loss 5837.75 training_loss_running_mean 5377.98 learning_rate 0.00020000 total_sec 239.2   sec_per_tick 0.4     sec_per_sample 0.45    cpu_mem_gb 0.88  
+[2025-12-23 18:12:53,702][checkpoint][WARNING] - Output directory ./checkpoints_diffusion does not exist, will attempt to create
+[2025-12-23 18:12:53,818][checkpoint][INFO] - Saved model state dictionary: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_diffusion/EDMPrecondSuperResolution.0.512.mdlus
+[2025-12-23 18:12:53,885][checkpoint][INFO] - Saved training checkpoint: /Users/monish/Desktop/Research Job/corrdiff_project/physicsnemo/examples/weather/corrdiff/checkpoints_diffusion/checkpoint.0.512.pt
+[2025-12-23 18:12:53,885][main][INFO] - Training Completed.
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync wandb/wandb/offline-run-20251223_175849-bjdmkrdh[0m

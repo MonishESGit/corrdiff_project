@@ -146,6 +146,21 @@ by modifying `dataset.output_variables`. This affects model output channels, tra
 generation artifacts, and evaluation metrics. Results confirm correct end-to-end execution,
 with expected degradation due to limited training budget.
 
+### Experiment exp6 — Best Feasible CPU Run
+
+`exp06_best_cpu` represents the strongest CorrDiff configuration achievable
+under CPU-only constraints.
+
+It includes:
+- Full regression and diffusion training logs
+- Learning-curve visualizations
+- Spatial forecast diagnostics
+- Quantitative metrics (MAE/RMSE)
+
+This experiment is used as the primary qualitative reference in the report,
+while earlier experiments analyze architectural and hyperparameter sensitivity.
+
+
 
 ## Understanding & Analysis
 

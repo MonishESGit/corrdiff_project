@@ -4,7 +4,7 @@ import json
 import os
 
 # Paths
-NC_PATH = "experiments/exp1_ensembles4/results/corrdiff_output_exp01_ensembles4.nc"
+NC_PATH = "experiments/exp1_ensembles4/results/corrdiff_output_exp1_ensembles4.nc"
 OUT_DIR = "experiments/exp1_ensembles4/results"
 
 os.makedirs(OUT_DIR, exist_ok=True)

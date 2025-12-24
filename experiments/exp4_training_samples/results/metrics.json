@@ -1,26 +1,75 @@
 {
-  "experiment": "exp04_diffusion_budget",
-  "description": "Diffusion training budget sweep (512 vs 2048 samples) with fixed regression checkpoint and fixed generation config",
+  "experiment": "exp4_training_samples",
+  "description": "Diffusion training budget sweep (512 vs 2048 samples) with fixed regression + fixed generation config",
   "units": "m/s",
+  "time_index": null,
   "runs": {
     "samples_512": {
       "10u": {
-        "mae": 2.8696742057800293,
-        "rmse": 3.5510659217834473
+        "truth_group": "truth",
+        "pred_group": "prediction",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 2.1556437015533447,
+            "rmse": 2.7166504042281048
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 2.1556437015533447,
+          "rmse": 2.7166504042281048
+        },
+        "units": "m/s"
       },
       "10v": {
-        "mae": 3.7347753047943115,
-        "rmse": 4.591217041015625
+        "truth_group": "truth",
+        "pred_group": "prediction",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 3.4250264167785645,
+            "rmse": 4.247180452232191
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 3.4250264167785645,
+          "rmse": 4.247180452232191
+        },
+        "units": "m/s"
       }
     },
     "samples_2048": {
       "10u": {
-        "mae": 1.8652355670928955,
-        "rmse": 2.2947652339935303
+        "truth_group": "truth",
+        "pred_group": "prediction",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 2.381995677947998,
+            "rmse": 2.8585484044726077
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 2.381995677947998,
+          "rmse": 2.8585484044726077
+        },
+        "units": "m/s"
       },
       "10v": {
-        "mae": 2.6404385566711426,
-        "rmse": 3.2470040321350098
+        "truth_group": "truth",
+        "pred_group": "prediction",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 3.474932909011841,
+            "rmse": 4.218839517279437
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 3.474932909011841,
+          "rmse": 4.218839517279437
+        },
+        "units": "m/s"
       }
     }
   }

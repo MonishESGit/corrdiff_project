@@ -1,10 +1,13 @@
 Experiment: exp0_baseline
-Variable: 10u
+Description: Baseline end-to-end smoke test (CPU-only)
 Units: m/s
+File: experiments/exp0_baseline/results/corrdiff_output_exp0_baseline.nc
+Has ensemble: True
 
-MAE:  2.1556
-RMSE: 2.7167
+Variable: 10u
+  Ensemble 0: MAE 2.1556, RMSE 2.7167
+  Ensemble-mean: MAE 2.1556, RMSE 2.7167
 
-Notes:
-Metrics computed as a sanity check only.
-Training used reduced CPU-only smoke-test configuration.
+Variable: 10v
+  Ensemble 0: MAE 3.4250, RMSE 4.2472
+  Ensemble-mean: MAE 3.4250, RMSE 4.2472

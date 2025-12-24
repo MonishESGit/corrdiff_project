@@ -1,10 +1,35 @@
 {
   "experiment": "exp0_baseline",
-  "variable": "10u",
+  "description": "Baseline end-to-end smoke test (CPU-only)",
   "units": "m/s",
   "metrics": {
-    "mae": 2.1556437015533447,
-    "rmse": 2.7166504859924316
-  },
-  "notes": "Sanity check only. CPU-only smoke-test training configuration."
+    "file": "experiments/exp0_baseline/results/corrdiff_output_exp0_baseline.nc",
+    "has_ensemble": true,
+    "variables": {
+      "10u": {
+        "per_ensemble": {
+          "0": {
+            "mae": 2.1556437015533447,
+            "rmse": 2.7166504859924316
+          }
+        },
+        "ensemble_mean": {
+          "mae": 2.1556437015533447,
+          "rmse": 2.7166504859924316
+        }
+      },
+      "10v": {
+        "per_ensemble": {
+          "0": {
+            "mae": 3.4250264167785645,
+            "rmse": 4.247180461883545
+          }
+        },
+        "ensemble_mean": {
+          "mae": 3.4250264167785645,
+          "rmse": 4.247180461883545
+        }
+      }
+    }
+  }
 }

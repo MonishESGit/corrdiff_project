@@ -78,7 +78,7 @@ perf:
   dataloader_workers: 0
 
 io:
-  regression_checkpoint_path: /Users/monish/Desktop/Research Job/physicsnemo/examples/weather/corrdiff/checkpoints_regression/checkpoint.0.512.pt
+  regression_checkpoint_path: null
   save_checkpoint_freq: 256
   save_n_recent_checkpoints: 2
   validation_freq: 1000000000

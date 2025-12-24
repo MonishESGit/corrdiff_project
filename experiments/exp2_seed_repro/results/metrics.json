@@ -1,36 +1,95 @@
 {
   "experiment": "exp2_seed_repro",
-  "description": "Seed reproducibility test for CorrDiff generation",
-  "units": "m/s",
+  "description": "Seed reproducibility test: same seed should match; different seed should differ",
   "runs": {
     "seed0_runA": {
       "10u": {
-        "mae": 2.1407759189605713,
-        "rmse": 2.681476593017578
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 2.1356146335601807,
+            "rmse": 2.6884589195251465
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 2.1356146335601807,
+          "rmse": 2.6884589195251465
+        }
       },
       "10v": {
-        "mae": 3.690633773803711,
-        "rmse": 4.545776844024658
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 3.4795584678649902,
+            "rmse": 4.296043395996094
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 3.4795584678649902,
+          "rmse": 4.296043395996094
+        }
       }
     },
     "seed0_runB": {
       "10u": {
-        "mae": 2.1407759189605713,
-        "rmse": 2.681476593017578
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 2.1356146335601807,
+            "rmse": 2.6884589195251465
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 2.1356146335601807,
+          "rmse": 2.6884589195251465
+        }
       },
       "10v": {
-        "mae": 3.690633773803711,
-        "rmse": 4.545776844024658
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 3.4795584678649902,
+            "rmse": 4.296043395996094
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 3.4795584678649902,
+          "rmse": 4.296043395996094
+        }
       }
     },
     "seed1_runC": {
       "10u": {
-        "mae": 2.1407759189605713,
-        "rmse": 2.681476593017578
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 2.1356146335601807,
+            "rmse": 2.6884589195251465
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 2.1356146335601807,
+          "rmse": 2.6884589195251465
+        }
       },
       "10v": {
-        "mae": 3.690633773803711,
-        "rmse": 4.545776844024658
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 3.4795584678649902,
+            "rmse": 4.296043395996094
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 3.4795584678649902,
+          "rmse": 4.296043395996094
+        }
       }
     }
   }

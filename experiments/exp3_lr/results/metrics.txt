@@ -1,15 +1,26 @@
 Experiment: exp3_lr
-Description: LR sweep (regression) with fixed generation evaluation
-Units: m/s
+Description: Regression LR sweep (fixed diffusion + fixed generation config)
 
-Run: lr_1e-4  (experiments/exp3_lr/results/corrdiff_output_lr_1e-4.nc)
-  10u: MAE 2.3998, RMSE 2.9996
-  10v: MAE 3.7817, RMSE 4.6441
+Run: lr_1e-4
+  10u (m/s):
+    Ensemble 0: MAE 2.1803, RMSE 2.7307
+    Ensemble-mean: MAE 2.1803, RMSE 2.7307
+  10v (m/s):
+    Ensemble 0: MAE 3.6906, RMSE 4.5117
+    Ensemble-mean: MAE 3.6906, RMSE 4.5117
 
-Run: lr_2e-4  (experiments/exp3_lr/results/corrdiff_output_lr_2e-4.nc)
-  10u: MAE 2.5989, RMSE 3.2351
-  10v: MAE 3.7851, RMSE 4.6464
+Run: lr_2e-4
+  10u (m/s):
+    Ensemble 0: MAE 2.1556, RMSE 2.7167
+    Ensemble-mean: MAE 2.1556, RMSE 2.7167
+  10v (m/s):
+    Ensemble 0: MAE 3.4250, RMSE 4.2472
+    Ensemble-mean: MAE 3.4250, RMSE 4.2472
 
-Run: lr_1e-3  (experiments/exp3_lr/results/corrdiff_output_lr_1e-3.nc)
-  10u: MAE 2.2458, RMSE 2.8118
-  10v: MAE 3.7579, RMSE 4.6198
+Run: lr_1e-3
+  10u (m/s):
+    Ensemble 0: MAE 2.1339, RMSE 2.6899
+    Ensemble-mean: MAE 2.1339, RMSE 2.6899
+  10v (m/s):
+    Ensemble 0: MAE 3.1292, RMSE 3.8733
+    Ensemble-mean: MAE 3.1292, RMSE 3.8733

@@ -1,0 +1,19 @@
+Experiment: exp06_best_cpu
+Description: Best feasible CPU-only CorrDiff run
+Units: m/s
+File: experiments/exp6_best_cpu/results/corrdiff_output_best_cpu.nc
+Has ensemble: True
+
+Variable: 10u
+  Ensemble 0: MAE 2.3194, RMSE 2.7601
+  Ensemble 1: MAE 2.2811, RMSE 2.7850
+  Ensemble 2: MAE 2.2703, RMSE 2.7201
+  Ensemble 3: MAE 2.2196, RMSE 2.7191
+  Ensemble-mean: MAE 2.0519, RMSE 2.3593
+
+Variable: 10v
+  Ensemble 0: MAE 2.6712, RMSE 3.2862
+  Ensemble 1: MAE 2.6093, RMSE 3.1999
+  Ensemble 2: MAE 2.7230, RMSE 3.3387
+  Ensemble 3: MAE 2.4400, RMSE 2.9971
+  Ensemble-mean: MAE 2.3468, RMSE 2.8098

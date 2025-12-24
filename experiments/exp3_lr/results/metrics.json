@@ -1,36 +1,95 @@
 {
   "experiment": "exp3_lr",
-  "description": "Learning-rate sweep on regression training; generated outputs evaluated against truth.",
-  "units": "m/s",
+  "description": "Regression LR sweep (fixed diffusion + fixed generation config)",
   "runs": {
     "lr_1e-4": {
       "10u": {
-        "mae": 2.3998425006866455,
-        "rmse": 2.9995968341827393
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 2.1803412437438965,
+            "rmse": 2.7306571006774902
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 2.1803412437438965,
+          "rmse": 2.7306571006774902
+        }
       },
       "10v": {
-        "mae": 3.7816648483276367,
-        "rmse": 4.644076347351074
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 3.6905980110168457,
+            "rmse": 4.511659145355225
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 3.6905980110168457,
+          "rmse": 4.511659145355225
+        }
       }
     },
     "lr_2e-4": {
       "10u": {
-        "mae": 2.598940372467041,
-        "rmse": 3.2351131439208984
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 2.1556437015533447,
+            "rmse": 2.7166504859924316
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 2.1556437015533447,
+          "rmse": 2.7166504859924316
+        }
       },
       "10v": {
-        "mae": 3.7851271629333496,
-        "rmse": 4.646420955657959
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 3.4250264167785645,
+            "rmse": 4.247180461883545
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 3.4250264167785645,
+          "rmse": 4.247180461883545
+        }
       }
     },
     "lr_1e-3": {
       "10u": {
-        "mae": 2.245778799057007,
-        "rmse": 2.8118438720703125
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 2.1339337825775146,
+            "rmse": 2.6899406909942627
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 2.1339337825775146,
+          "rmse": 2.6899406909942627
+        }
       },
       "10v": {
-        "mae": 3.757930278778076,
-        "rmse": 4.619781494140625
+        "units": "m/s",
+        "per_ensemble": [
+          {
+            "ensemble": 0,
+            "mae": 3.129183769226074,
+            "rmse": 3.8732681274414062
+          }
+        ],
+        "ensemble_mean": {
+          "mae": 3.129183769226074,
+          "rmse": 3.8732681274414062
+        }
       }
     }
   }

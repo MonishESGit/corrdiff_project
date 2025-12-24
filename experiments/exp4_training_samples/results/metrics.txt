@@ -1,11 +1,19 @@
-Experiment: exp04_diffusion_budget
-Description: Diffusion training budget sweep (512 vs 2048 samples), regression fixed
+Experiment: exp4_training_samples
+Description: Diffusion training budget sweep (512 vs 2048 samples) with fixed regression + fixed generation config
 Units: m/s
 
-Run: samples_512  (experiments/exp4_training_samples/results/corrdiff_output_samples512.nc)
-  10u: MAE 2.8697, RMSE 3.5511
-  10v: MAE 3.7348, RMSE 4.5912
+Run: samples_512
+  Variable: 10u
+    Ensemble 0: MAE 2.1556, RMSE 2.7167
+    Ensemble-mean: MAE 2.1556, RMSE 2.7167
+  Variable: 10v
+    Ensemble 0: MAE 3.4250, RMSE 4.2472
+    Ensemble-mean: MAE 3.4250, RMSE 4.2472
 
-Run: samples_2048  (experiments/exp4_training_samples/results/corrdiff_output_samples2048.nc)
-  10u: MAE 1.8652, RMSE 2.2948
-  10v: MAE 2.6404, RMSE 3.2470
+Run: samples_2048
+  Variable: 10u
+    Ensemble 0: MAE 2.3820, RMSE 2.8585
+    Ensemble-mean: MAE 2.3820, RMSE 2.8585
+  Variable: 10v
+    Ensemble 0: MAE 3.4749, RMSE 4.2188
+    Ensemble-mean: MAE 3.4749, RMSE 4.2188

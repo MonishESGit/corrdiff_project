@@ -3,15 +3,15 @@ Description: Generation with 4 diffusion ensembles
 Units: m/s
 
 Variable: 10u
-  Ensemble 0: MAE 2.0912, RMSE 2.6285
-  Ensemble 1: MAE 2.2011, RMSE 2.7682
-  Ensemble 2: MAE 2.1689, RMSE 2.7190
-  Ensemble 3: MAE 2.1322, RMSE 2.6957
-  Ensemble-mean: MAE 1.3816, RMSE 1.7602
+  Ensemble 0: MAE 2.1556, RMSE 2.7167
+  Ensemble 1: MAE 2.2078, RMSE 2.8034
+  Ensemble 2: MAE 2.2021, RMSE 2.7554
+  Ensemble 3: MAE 2.1824, RMSE 2.7684
+  Ensemble-mean: MAE 1.4689, RMSE 1.8945
 
 Variable: 10v
-  Ensemble 0: MAE 3.5936, RMSE 4.4377
-  Ensemble 1: MAE 3.4864, RMSE 4.3042
-  Ensemble 2: MAE 3.5482, RMSE 4.3814
-  Ensemble 3: MAE 3.4032, RMSE 4.1909
-  Ensemble-mean: MAE 3.0245, RMSE 3.6425
+  Ensemble 0: MAE 3.4250, RMSE 4.2472
+  Ensemble 1: MAE 3.3104, RMSE 4.1137
+  Ensemble 2: MAE 3.3645, RMSE 4.1848
+  Ensemble 3: MAE 3.2302, RMSE 4.0020
+  Ensemble-mean: MAE 2.8035, RMSE 3.4289
